@@ -1,0 +1,34 @@
+augment 5 Results:
+(keras_gpu_tensorflow) sudeep@Yoga500:~/Desktop/Deep Learning/Pepperfry/Keras$ python model.py 
+/home/sudeep/.conda/envs/keras_gpu_tensorflow/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+2018-03-15 04:46:13.314892: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-15 04:46:13.333594: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_NO_DEVICE
+2018-03-15 04:46:13.333653: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:158] retrieving CUDA diagnostic information for host: Yoga500
+2018-03-15 04:46:13.333669: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:165] hostname: Yoga500
+2018-03-15 04:46:13.333725: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:189] libcuda reported version is: 384.111.0
+2018-03-15 04:46:13.333752: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:369] driver version file contents: """NVRM version: NVIDIA UNIX x86_64 Kernel Module  384.111  Tue Dec 19 23:51:45 PST 2017
+GCC version:  gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9) 
+"""
+2018-03-15 04:46:13.333776: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:193] kernel reported version is: 384.111.0
+2018-03-15 04:46:13.333794: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:300] kernel version seems to match DSO: 384.111.0
+Train on 8661 samples, validate on 1529 samples
+Epoch 1/3
+8661/8661 [==============================] - 947s 109ms/step - loss: 0.0945 - acc: 0.9803 - val_loss: 0.1917 - val_acc: 0.9392
+Epoch 2/3
+8661/8661 [==============================] - 938s 108ms/step - loss: 0.0803 - acc: 0.9868 - val_loss: 0.1245 - val_acc: 0.9653
+Epoch 3/3
+8661/8661 [==============================] - 929s 107ms/step - loss: 0.0700 - acc: 0.9900 - val_loss: 0.1130 - val_acc: 0.9712
+
+classes:
+shelf_jpg 152
+chair_jpg 154
+table_jpg 223
+lamp_jpg 275
+wardrobe_jpg 147
+sofa_jpg 178
+bed_jpg 275
+stool_jpg 265
+
+Haven't normalized here. 
